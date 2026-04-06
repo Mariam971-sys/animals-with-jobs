@@ -3,8 +3,8 @@ import { IAnimal } from "./IAnimals";
 export const renderList = (
   animals: IAnimal[],
   onClick: (animal: IAnimal) => void
-) => {
-  const ul = document.getElementById("animal-list");
+): void => {
+  const ul = document.getElementById("animal-list") as HTMLUListElement | null;
   if (!ul) return;
 
   ul.innerHTML = "";
