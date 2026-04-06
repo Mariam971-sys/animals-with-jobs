@@ -1,5 +1,24 @@
-//Använd fetch för att hämta datan i data/data.json
-//Använd try/catch och om anropet lyckas, returnera datan. Annars, returnera "null"
-//Typa upp funktionen med vad den returnerar
+import { IAnimal } from "./IAnimals";
 
-export default async function fetchAnimals() {}
+/**
+ * Hämtar en lista med djur från data/data.json
+ * @returns Array av IAnimal om lyckas, annars null
+ */
+export default async function fetchAnimals(): Promise<IAnimal[] | null> {
+  try {
+    const response = await fetch("data/data.json");
+
+    if (!response.ok) {
+      // Om anropet misslyckas (t.ex. 404, 500)
+      console.error("Failed to fetch animals:", response.statusText);
+      return null;
+    }
+
+    const data: IAnimal[] = await response.json();
+    return data;
+  } catch (error) {
+    // Om fetch kastar ett error (t.ex. nätverksproblem)
+    console.error("Error fetching animals:", error);
+    return null;
+  }
+}
