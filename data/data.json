@@ -16,5 +16,15 @@
     "birthYear": "2020",
     "imageUrl": "luna_the_cat.png",
     "employmentStartDate": "2024-02-05"
+  },
+  {
+    "name": "Oscar",
+    "kindOfAnimal": "Owl",
+    "job": "Night Shift Librarian",
+    "skills": ["reading", "flying", "judging"],
+    "birthYear": "2015",
+    "imageUrl": "oscar_the_owl.png",
+    "employmentStartDate": "2017-09-18",
+    "employmentEndDate": "2024-12-01"
   }
 ]
