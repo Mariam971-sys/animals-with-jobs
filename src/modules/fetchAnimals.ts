@@ -1,4 +1,4 @@
-import { IAnimal } from "./IAnimals";
+ import { IAnimal} from "./IAnimal";
 
 /**
  * Hämtar lista med djur från data/data.json

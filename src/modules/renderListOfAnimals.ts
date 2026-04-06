@@ -1,4 +1,4 @@
-import { IAnimal } from "./IAnimals";
+import { IAnimal} from  "./IAnimal";
 
 export const renderList = (
   animals: IAnimal[],

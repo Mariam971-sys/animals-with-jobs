@@ -1,12 +1,13 @@
-import { IAnimal } from "./IAnimals";
+import { IAnimal} from "./IAnimal";
 
 export const renderAnimalInfo = (animal: IAnimal): void => {
   const container = document.getElementById("animal-info");
   if (!container) return;
 
+  // Rensa allt innehåll
   container.innerHTML = "";
 
-  // Image
+  // 1️⃣ Image
   if (animal.imageUrl) {
     const img = document.createElement("img");
     img.src = `images/${animal.imageUrl}`;
@@ -15,12 +16,12 @@ export const renderAnimalInfo = (animal: IAnimal): void => {
     container.appendChild(img);
   }
 
-  // Name + Type
+  // 2️⃣ Name + Type
   const nameType = document.createElement("h2");
   nameType.textContent = `${animal.name} the ${animal.kindOfAnimal}`;
   container.appendChild(nameType);
 
-  // Job + Employment Status
+  // 3️⃣ Job + Employment Status
   const jobPara = document.createElement("p");
   const employmentStatus = animal.employmentEndDate
     ? "Currently not employed"
@@ -28,17 +29,17 @@ export const renderAnimalInfo = (animal: IAnimal): void => {
   jobPara.textContent = `${animal.job} - ${employmentStatus}`;
   container.appendChild(jobPara);
 
-  // Age
+  // 4️⃣ Age
   const agePara = document.createElement("p");
   const currentYear = new Date().getFullYear();
   const birthYearNum = parseInt(animal.birthYear);
   const age = isNaN(birthYearNum) ? "Unknown" : currentYear - birthYearNum;
-  agePara.innerHTML = `<strong>Age:</strong> ${age} years old.`;
+  agePara.textContent = `Age: ${age} years old.`;
   container.appendChild(agePara);
 
-  // Skills
+  // 5️⃣ Skills
   const skillsHeading = document.createElement("p");
-  skillsHeading.innerHTML = "<strong>Skills:</strong>";
+  skillsHeading.textContent = "Skills:";
   container.appendChild(skillsHeading);
 
   if (animal.skills) {
