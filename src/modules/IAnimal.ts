@@ -3,7 +3,7 @@ export interface IAnimal {
   kindOfAnimal: string;
   job: string;
   skills?: string | string[];
-  birthYear: string; // note: string in JSON, convert with parseInt
+  birthYear: string;
   imageUrl: string;
   employmentStartDate: string;
   employmentEndDate?: string;
