@@ -1,4 +1,4 @@
- import { IAnimal} from "./IAnimal";
+import type { IAnimal } from "./IAnimal.js";
 
 /**
  * Hämtar lista med djur från data/data.json
@@ -6,7 +6,8 @@
  */
 export default async function fetchAnimals(): Promise<IAnimal[]> {
   try {
-    const response = await fetch("data/data.json");
+    const dataUrl = new URL("../../data/data.json", import.meta.url);
+    const response = await fetch(dataUrl);
     if (!response.ok) {
       console.error("Failed to fetch animals:", response.statusText);
       return [];

@@ -1,40 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d3d3d3;
+  color: #000;
 }
 
-.list-of-animals {
-  margin-bottom: 20px;
+.animal-nav {
+  padding: 0.85rem 1.25rem 0;
 }
 
-#animal-list li {
-  cursor: pointer;
-  padding: 8px 12px;
-  margin: 4px 0;
-  background-color: #fff;
-  border-radius: 6px;
+.animal-nav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0.35rem 0 1rem;
   list-style: none;
-  transition: background 0.2s;
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 
-#animal-list li:hover {
-  background-color: #e0e0e0;
+.animal-nav__item {
+  flex: 0 0 auto;
+  cursor: pointer;
+  padding: 0.15rem 0;
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: 0.95rem;
+  color: #000;
+  white-space: nowrap;
 }
 
-#animal-info img {
+.animal-nav__item:hover {
+  text-decoration: underline;
+}
+
+.animal-nav__item--active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1.5rem 3rem;
+}
+
+.animal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 32rem;
+  width: 100%;
+}
+
+.animal-info__photo {
+  width: min(320px, 78vw);
+  height: min(320px, 78vw);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
   display: block;
-  margin-bottom: 12px;
 }
 
-#animal-info h2 {
-  margin: 0 0 8px 0;
+.animal-info__name {
+  margin: 1.5rem 0 0.65rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.05rem;
+  font-weight: normal;
+  color: #8a8a8a;
+  text-align: center;
 }
 
-#animal-info p {
-  margin: 4px 0;
+.animal-info__job {
+  margin: 0 0 1.1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-align: center;
+  color: #000;
 }
 
-#animal-info ul {
-  margin: 4px 0 12px 20px;
+.animal-info__details {
+  align-self: stretch;
+  max-width: 18rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.animal-info__label {
+  margin: 0 0 0.15rem;
+  font-size: 0.9rem;
+  color: #707070;
+  font-weight: normal;
+}
+
+.animal-info__age {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.animal-info__age-value {
+  font-weight: 700;
+  color: #000;
+}
+
+.animal-info__skills-block {
+  margin: 0;
+}
+
+.animal-info__skill {
+  margin: 0.12rem 0 0;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
 }

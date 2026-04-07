@@ -1,4 +1,4 @@
-import { IAnimal} from  "./IAnimal";
+import type { IAnimal } from "./IAnimal.js";
 
 export const renderList = (
   animals: IAnimal[],
@@ -9,11 +9,25 @@ export const renderList = (
 
   ul.innerHTML = "";
 
-  animals.forEach((animal) => {
+  const setActive = (activeLi: HTMLLIElement) => {
+    ul.querySelectorAll(".animal-nav__item").forEach((li) => {
+      li.classList.remove("animal-nav__item--active");
+    });
+    activeLi.classList.add("animal-nav__item--active");
+  };
+
+  animals.forEach((animal, index) => {
     const li = document.createElement("li");
     li.textContent = animal.name;
+    li.className = "animal-nav__item";
+    if (index === 0) {
+      li.classList.add("animal-nav__item--active");
+    }
 
-    li.addEventListener("click", () => onClick(animal));
+    li.addEventListener("click", () => {
+      setActive(li);
+      onClick(animal);
+    });
 
     ul.appendChild(li);
   });

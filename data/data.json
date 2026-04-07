@@ -26,5 +26,113 @@
     "imageUrl": "oscar_the_owl.png",
     "employmentStartDate": "2017-09-18",
     "employmentEndDate": "2024-12-01"
+  },
+  {
+    "name": "Daisy",
+    "kindOfAnimal": "Dog",
+    "job": "Head of Morale",
+    "skills": ["wagging", "fetch"],
+    "birthYear": "2019",
+    "imageUrl": "daisy_the_dog.png",
+    "employmentStartDate": "2022-03-01"
+  },
+  {
+    "name": "Gary",
+    "kindOfAnimal": "Snail",
+    "job": "Document Archivist",
+    "skills": ["patience", "trails"],
+    "birthYear": "2017",
+    "imageUrl": "gary_the_snail.png",
+    "employmentStartDate": "2020-06-15"
+  },
+  {
+    "name": "Nemo",
+    "kindOfAnimal": "Fish",
+    "job": "Aquarium Tour Guide",
+    "skills": ["swimming", "bubbles"],
+    "birthYear": "2021",
+    "imageUrl": "nemo_the_fish.png",
+    "employmentStartDate": "2023-01-10"
+  },
+  {
+    "name": "Polly",
+    "kindOfAnimal": "Parrot",
+    "job": "Receptionist",
+    "skills": ["greeting", "mimicry"],
+    "birthYear": "2016",
+    "imageUrl": "polly_the_parrot.png",
+    "employmentStartDate": "2018-08-20"
+  },
+  {
+    "name": "Tony",
+    "kindOfAnimal": "Tiger",
+    "job": "Security Supervisor",
+    "skills": ["focus", "pacing"],
+    "birthYear": "2014",
+    "imageUrl": "tony_the_tiger.png",
+    "employmentStartDate": "2019-05-01"
+  },
+  {
+    "name": "Ellie",
+    "kindOfAnimal": "Elephant",
+    "job": "Logistics Mover",
+    "skills": ["memory", "lifting"],
+    "birthYear": "2012",
+    "imageUrl": "ellie_the_elephant.png",
+    "employmentStartDate": "2017-02-28"
+  },
+  {
+    "name": "Zara",
+    "kindOfAnimal": "Zebra",
+    "job": "Crosswalk Consultant",
+    "skills": ["stripes", "herding"],
+    "birthYear": "2018",
+    "imageUrl": "zara_the_zebra.png",
+    "employmentStartDate": "2021-11-11"
+  },
+  {
+    "name": "Ricky",
+    "kindOfAnimal": "Raccoon",
+    "job": "Recycling Inspector",
+    "skills": ["sorting", "night ops"],
+    "birthYear": "2019",
+    "imageUrl": "ricky_the_raccoon.png",
+    "employmentStartDate": "2022-07-04"
+  },
+  {
+    "name": "Molly",
+    "kindOfAnimal": "Mouse",
+    "job": "Cheese Quality Analyst",
+    "skills": ["nibble", "squeak"],
+    "birthYear": "2022",
+    "imageUrl": "molly_the_mouse.png",
+    "employmentStartDate": "2024-09-01"
+  },
+  {
+    "name": "Sammy",
+    "kindOfAnimal": "Seal",
+    "job": "Ball Balancer",
+    "skills": ["balance", "applause"],
+    "birthYear": "2013",
+    "imageUrl": "sammy_the_seal.png",
+    "employmentStartDate": "2018-04-12"
+  },
+  {
+    "name": "Penny",
+    "kindOfAnimal": "Penguin",
+    "job": "Ice Delivery",
+    "skills": ["toboggan", "waddle"],
+    "birthYear": "2020",
+    "imageUrl": "penny_the_penguin.png",
+    "employmentStartDate": "2023-12-01"
+  },
+  {
+    "name": "Hugo",
+    "kindOfAnimal": "Hippo",
+    "job": "Pool Lifeguard",
+    "skills": ["floating", "splash"],
+    "birthYear": "2011",
+    "imageUrl": "hugo_the_hippo.png",
+    "employmentStartDate": "2016-06-01"
   }
 ]

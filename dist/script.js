@@ -1,10 +1,12 @@
-import fetchAnimals from '../fetchAnimals.js';
-import { renderList } from '../renderList.js';
-import { renderAnimalInfo } from '../renderAnimalInfo.js';
-
-async function init() {
+import fetchAnimals from "./modules/fetchAnimals.js";
+import { renderList } from "./modules/renderListOfAnimals.js";
+import { renderAnimalInfo } from "./modules/renderAnimalInfo.js";
+const init = async () => {
     const animals = await fetchAnimals();
-    renderList(animals, renderAnimalInfo);
-}
-
-document.addEventListener("DOMContentLoaded", init);
+    renderList(animals, (animal) => renderAnimalInfo(animal));
+    const first = animals[0];
+    if (first) {
+        renderAnimalInfo(first);
+    }
+};
+init();
